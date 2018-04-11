@@ -28,4 +28,5 @@ Put program and xml the location
 
 9. galaxy restart
 
+then. you will run this program on galaxy.
 
