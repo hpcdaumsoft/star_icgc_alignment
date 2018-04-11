@@ -1,21 +1,31 @@
 # star_icgc_alignment
-RNA-Seq mapper
+RNA-Seq Genome Mapper
 
 ICGC aligner from "https://docs.gdc.cancer.gov/Data/Bioinformatics_Pipelines/Expression_mRNA_Pipeline/#icgc-star-alignment-pipeline"
 
-program and xml location
+Put program and xml the location
 
-1. put the "tar_gz" on  user define directory
+1. define GALAXY_HOME=/storage/home/galaxy at .bash_profile
 
-2. put the "ICGC_STAR_ALIGNMENT_PIPELINE"  on  user define directory
-      
-3. add the below xml  to   ~/galaxy/config/tool_conf.xml
+2. mkdir -p $GALAXY_HOME/package/DAUMSOFT/RNA-seq/TAR
+
+3. cp -rf   tar_gz/tar          $GALAXY_HOME/package/DAUMSOFT/RNA-seq/TAR
+
+4. cp -rf   tar_gz/tar.sh       $GALAXY_HOME/package/DAUMSOFT/RNA-seq/TAR
+
+5. cp -rf   tar_gz/tar_gz.xml   $GALAXY_HOME/package/DAUMSOFT/RNA-seq/TAR
+
+6. mkdir -p $GALAXY_HOME/package/DAUMSOFT/RNA-seq/ICGC_STAR_ALIGNMENT_PIPELINE
+
+7. cp -rf   ICGC_STAR_ALIGNMENT_PIPELINE/*  $GALAXY_HOME/package/DAUMSOFT/RNA-seq/ICGC_STAR_ALIGNMENT_PIPELINE/
+     
+8. add the below xml  to   ~/galaxy/config/tool_conf.xml
 
 <section id="rnaseq_name" name="RNA-Seq">
     <tool file="user define directory/tar_gz.xml" />
     <tool file="user define directory/icgc_star2_wrapper.xml" />
 </section>
 
-4. galaxy restart
+9. galaxy restart
 
 
