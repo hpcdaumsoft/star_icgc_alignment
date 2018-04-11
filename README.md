@@ -1,7 +1,7 @@
 # star_icgc_alignment
 RNA-Seq mapper
 
-ICGC alignment from "https://docs.gdc.cancer.gov/Data/Bioinformatics_Pipelines/Expression_mRNA_Pipeline/#icgc-star-alignment-pipeline"
+ICGC aligner from "https://docs.gdc.cancer.gov/Data/Bioinformatics_Pipelines/Expression_mRNA_Pipeline/#icgc-star-alignment-pipeline"
 
 program and xml location
 
